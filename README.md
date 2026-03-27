@@ -1,4 +1,3 @@
-- Yelung Rai
 # PyPM
 
 **PyPM** is an open-source Python library for **pattern mining**.  
