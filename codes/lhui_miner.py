@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Single-file Python conversion of SPMF AlgoLHUIMiner (LHUI-Miner).
+Single-file Python implementation of SPMF AlgoLHUIMiner (LHUI-Miner).
 
 Matches MainTestLHUIMiner.java defaults:
 - lminutil = 40
@@ -397,11 +397,11 @@ class AlgoLHUIMiner:
 # Main (like MainTestLHUIMiner)
 # -----------------------------
 def main() -> None:
-    lminutil = 45
+    lminutil = 40
     windowSize = 3
 
-    input_file = "Java//src//DB_LHUI.txt"
-    output_file = "Java//src//output_py.txt"  # change to "Java/src/output_java.txt" if you want same path
+    input_file = "DB_LHUI.txt"
+    output_file = "output_py.txt"  # change to "output_java.txt" if you want same path
 
     algo = AlgoLHUIMiner()
     algo.runAlgorithm(input_file, output_file, lminutil, windowSize)
