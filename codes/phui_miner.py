@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Single-file Python conversion of SPMF AlgoPHUIMiner (PHUI-Miner).
+Single-file Python implementation of SPMF AlgoPHUIMiner (PHUI-Miner).
 
 Matches MainTestPHUIMiner.java defaults:
 - lminutil = 40
@@ -486,12 +486,12 @@ class AlgoPHUIMiner:
 # Main (like MainTestPHUIMiner)
 # -----------------------------
 def main() -> None:
-    lminutil = 35
+    lminutil = 40
     lamda = 2
     windowSize = 3
 
-    input_file = "Java/src/DB_LHUI.txt"
-    output_file = "Java/src/output_py.txt"  # change to "Java/src/output_java.txt" if you want same path
+    input_file = "DB_LHUI.txt"
+    output_file = "output_py.txt"  # change to "output_java.txt" if you want same path
 
     algo = AlgoPHUIMiner()
     algo.runAlgorithm(input_file, output_file, lminutil, windowSize, lamda)
