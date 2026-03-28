@@ -12,11 +12,11 @@ BASE_DIR = CURRENT_DIR
 
 PROFIT_FILE = os.path.join(BASE_DIR, "UtilityDB_profit.txt")
 DB_FILE = os.path.join(BASE_DIR, "UtilityDB.txt")
-OUTPUT_FILE = os.path.join(BASE_DIR, "#111_output.txt")
+OUTPUT_FILE = os.path.join(BASE_DIR, "outputs.txt")
 
 # PARAMETERS (same as Java)
 BETA = 2
-GLMAU = 30
+GLMAU = 25
 
 
 # =====================================================
