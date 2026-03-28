@@ -8,17 +8,11 @@ from itertools import combinations
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-if os.path.basename(CURRENT_DIR) == "src":
-    BASE_DIR = os.path.dirname(CURRENT_DIR)
-    SRC_DIR = CURRENT_DIR
-else:
-    BASE_DIR = CURRENT_DIR
-    SRC_DIR = os.path.join(BASE_DIR, "src")
 
-INPUT_FILE = os.path.join(SRC_DIR, "contextHAUIMiner.txt")
-OUTPUT_FILE = os.path.join(BASE_DIR, "#109_output.txt")
+INPUT_FILE = os.path.join(CURRENT_DIR, "contextHAUIMiner.txt")
+OUTPUT_FILE = os.path.join(CURRENT_DIR, "output.txt")
 
-MAU = 30   # <<< CHANGE THRESHOLD HERE
+MAU = 24   # <<< CHANGE THRESHOLD HERE
 
 
 # ==========================================================
