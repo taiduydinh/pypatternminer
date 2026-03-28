@@ -6,10 +6,10 @@ import time
 # ==============================
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "src", "contextHAUIMiner.txt")
-OUTPUT_FILE = os.path.join(BASE_DIR, "#107_output.txt")
+INPUT_FILE = os.path.join(BASE_DIR, "contextHAUIMiner.txt")
+OUTPUT_FILE = os.path.join(BASE_DIR, "outputs.txt")
 
-MIN_AUTILITY = 30  # <<< CHANGE THRESHOLD HERE
+MIN_AUTILITY = 10  # <<< CHANGE THRESHOLD HERE
 
 
 # ==============================
