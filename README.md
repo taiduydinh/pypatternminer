@@ -60,3 +60,110 @@ The returned pattern sets and associated values, such as support or utility, are
 
 ```bash
 pip install pypatternminer
+```
+
+### Install from source
+
+Clone the repository and install the package locally:
+
+```bash
+git clone https://github.com/taiduydinh/pypatternminer.git
+cd pypatternminer
+pip install .
+```
+
+If you want to install in editable mode for development:
+
+```bash
+pip install -e .
+```
+
+## Quick Start
+
+Algorithms are currently organized by module. A typical usage pattern is to import the algorithm class from its corresponding module.
+
+### Example: Apriori
+
+```python
+from pypatternminer.apriori import AlgoApriori
+
+algo = AlgoApriori()
+algo.runAlgorithm(
+    minsup=0.5,
+    input_path="contextPasquier99.txt",
+    output_path="output_py.txt"
+)
+```
+
+### Example: LCIM
+
+```python
+from pypatternminer.lcim import AlgoLCIM
+
+algo = AlgoLCIM()
+algo.runAlgorithm(
+    input_file="DB_cost.txt",
+    output_file="output_py.txt",
+    minUtility=28.0,
+    maxcost=10.0,
+    minsupp=0.3
+)
+```
+
+## Package Organization
+
+The project is organized as follows:
+
+```text
+pypatternminer/
+├── .github/                 # GitHub Actions workflows
+├── datasets/                # testing datasets
+├── pypatternminer/          # source code
+│   ├── __init__.py
+│   ├── apriori.py
+│   ├── aprioriclose.py
+│   ├── aprioriinverse.py
+│   ├── ...
+│   └── lcim.py
+├── README.md
+└── pyproject.toml
+```
+
+## Repository Structure
+
+The repository is designed to support both algorithm development and reproducible experimentation:
+
+- `pypatternminer/` contains the Python implementations of the algorithms;
+- `datasets/` contains testing datasets used for validation and experiments;
+- `.github/workflows/` contains the release and publishing workflows.
+
+## Usage Notes
+
+- Algorithms are currently accessed through their corresponding modules, for example:
+  - `from pypatternminer.apriori import AlgoApriori`
+  - `from pypatternminer.lcim import AlgoLCIM`
+- Input files, parameters, and output formats may differ across algorithms depending on their original design and reference implementation.
+
+## Contributing
+
+Contributions are welcome.
+
+You can contribute by:
+
+- implementing additional pattern-mining algorithms;
+- improving documentation and examples;
+- reporting bugs or testing issues;
+- adding benchmark datasets and validation cases;
+- improving code quality and reproducibility.
+
+If you would like to contribute, please open an issue or submit a pull request.
+
+## Citation
+
+If you use **pypatternminer** in your research, please cite the repository or the related paper if available.
+
+A formal citation entry can be added here in future releases.
+
+## Vision
+
+**pypatternminer** is intended to serve as both a practical software library and a research infrastructure for the pattern-mining community. By combining algorithmic breadth, reproducibility, and public accessibility, the project aims to support researchers, educators, and practitioners working on pattern mining and related areas.
