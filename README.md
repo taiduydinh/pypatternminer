@@ -1,31 +1,30 @@
 # pypatternminer
 
-**pypatternminer** is an open-source Python library for **pattern mining**.  
-It is designed to provide a broad, research-oriented, and reproducible Python framework covering major pattern-mining families, including:
+**pypatternminer** is an open-source Python library for **pattern mining**. It provides a broad, research-oriented, and reproducible framework for major pattern-mining families, including:
 
 - **Itemset mining**
 - **High-utility itemset mining**
 - **High-utility sequential pattern mining**
 - **Sequential pattern mining**
 
-pypatternminer is developed with two main goals:
+The project is developed with two main goals:
 
-1. to provide a **rich Python framework** that covers many influential pattern-mining algorithms in a unified environment;
-2. to provide **publicly available code and testing datasets** for transparent and reproducible research.
+1. to provide a **comprehensive Python framework** covering many influential pattern-mining algorithms in a unified environment;
+2. to provide **publicly available code and testing datasets** to support transparent and reproducible research.
 
 ## Why pypatternminer?
 
-Pattern mining has produced a large number of algorithms over the last three decades, but the available Python ecosystem is still fragmented. pypatternminer aims to reduce this gap by offering:
+Pattern mining has produced a large number of important algorithms over the past three decades, but the Python ecosystem remains relatively fragmented. **pypatternminer** aims to help bridge this gap by offering:
 
 - a unified Python environment for multiple pattern-mining families;
 - broad algorithmic coverage;
 - validation against **SPMF** reference implementations;
-- public release of source code and testing data;
+- public access to source code and testing datasets;
 - a foundation for teaching, benchmarking, and future research.
 
 ## Current Coverage
 
-At the current stage, pypatternminer includes **144 implemented entries**:
+At the current stage, **pypatternminer** includes **144 implemented entries**:
 
 | Category | Implemented |
 |---|---:|
@@ -45,25 +44,23 @@ Planned future extensions include:
 
 ## Validation
 
-A key design principle of pypatternminer is **implementation reliability**.
+A key design principle of **pypatternminer** is **implementation reliability**.
 
-Each Python implementation is validated against the corresponding **Java implementation in SPMF** under:
+Each Python implementation is validated against the corresponding **Java implementation in SPMF** using:
 
 - the same input datasets,
 - the same parameter settings,
 - and the same experimental conditions.
 
-The returned pattern sets and associated values (such as support or utility) are compared to ensure matching outputs.
+The returned pattern sets and associated values, such as support or utility, are compared to ensure matching outputs.
 
-## Repository Structure
+## Installation
 
-The organization of the project is as follows:
+### Install from source
 
-```text
-pypatternminer/
-├── codes/               # source code
-├── datasets/            # testing datasets
-├── examples/            # usage examples / notebooks / scripts
-├── tests/               # validation and unit tests
-├── docs/                # documentation
-└── README.md
+Clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/taiduydinh/pypatternminer.git
+cd pypatternminer
+pip install -r requirements.txt
