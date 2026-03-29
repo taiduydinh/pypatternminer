@@ -1,6 +1,6 @@
-# PyPM
+# pypatternminer
 
-**PyPM** is an open-source Python library for **pattern mining**.  
+**pypatternminer** is an open-source Python library for **pattern mining**.  
 It is designed to provide a broad, research-oriented, and reproducible Python framework covering major pattern-mining families, including:
 
 - **Itemset mining**
@@ -8,14 +8,14 @@ It is designed to provide a broad, research-oriented, and reproducible Python fr
 - **High-utility sequential pattern mining**
 - **Sequential pattern mining**
 
-PyPM is developed with two main goals:
+pypatternminer is developed with two main goals:
 
 1. to provide a **rich Python framework** that covers many influential pattern-mining algorithms in a unified environment;
 2. to provide **publicly available code and testing datasets** for transparent and reproducible research.
 
-## Why PyPM?
+## Why pypatternminer?
 
-Pattern mining has produced a large number of algorithms over the last three decades, but the available Python ecosystem is still fragmented. PyPM aims to reduce this gap by offering:
+Pattern mining has produced a large number of algorithms over the last three decades, but the available Python ecosystem is still fragmented. pypatternminer aims to reduce this gap by offering:
 
 - a unified Python environment for multiple pattern-mining families;
 - broad algorithmic coverage;
@@ -25,7 +25,7 @@ Pattern mining has produced a large number of algorithms over the last three dec
 
 ## Current Coverage
 
-At the current stage, PyPM includes **144 implemented entries**:
+At the current stage, pypatternminer includes **144 implemented entries**:
 
 | Category | Implemented |
 |---|---:|
@@ -45,7 +45,7 @@ Planned future extensions include:
 
 ## Validation
 
-A key design principle of PyPM is **implementation reliability**.
+A key design principle of pypatternminer is **implementation reliability**.
 
 Each Python implementation is validated against the corresponding **Java implementation in SPMF** under:
 
@@ -60,7 +60,7 @@ The returned pattern sets and associated values (such as support or utility) are
 The organization of the project is as follows:
 
 ```text
-pypm/
+pypatternminer/
 ├── codes/               # source code
 ├── datasets/            # testing datasets
 ├── examples/            # usage examples / notebooks / scripts
