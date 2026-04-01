@@ -174,5 +174,3 @@ pypatternminer is released under the **GNU General Public License v3.0 (GPLv3)**
 **pypatternminer** is intended to serve as both a practical software library and a research infrastructure for the pattern-mining community. By combining algorithmic breadth, reproducibility, and public accessibility, the project aims to support researchers, educators, and practitioners working on pattern mining and related areas.
 
 At the current stage, several implementations were developed by adapting ideas and code structure from the original **SPMF** Java library, followed by validation to ensure that the Python versions produce results consistent with the corresponding reference implementations under the same datasets and parameter settings.
-
-The project may also include original extensions, refactoring, interface changes, and future optimizations beyond the original Java implementation. However, where code is derived from SPMF, the project follows the requirements of the **GNU GPL v3** license.
